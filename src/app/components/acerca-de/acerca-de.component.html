@@ -1,0 +1,33 @@
+<div>
+  <button
+    type="button"
+    class="btn btn-primary"
+    routerLink="/editacercade/1"
+    *ngIf="isLogged"
+  >
+    Editar Persona
+  </button>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <img [src]="persona.img" class="img-fluid" id="fotoPerfil" />
+  </div>
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <p id="nombre">{{ persona.nombre }} {{ persona.apellido }}</p>
+    <p>FullStack Developer Jr</p>
+  </div>
+  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 descripcion">
+    <span>
+      <h1>Acerca de Mi</h1>
+      <p>
+        {{ persona.descripcion }}
+        <!-- Soy una persona creativa, proactiva, disciplinada,y con mucho amor por
+        la programacion. Manejo las siguientes tecnologias: HTML, CSS,
+        JavaScript, Angular, TypeScript, Bootstrap, Git y GitHub Actualmente me
+        estoy formando en #YoProgramo de Argentina programa para desempeñarme
+        como un desarrollador FULL-STACK Estoy interesado por conseguir mi
+        primer empleo como aprendiz en alguna empresa tecnologica.-->
+      </p>
+    </span>
+  </div>
+</div>
